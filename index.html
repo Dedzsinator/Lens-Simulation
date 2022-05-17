@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="lens.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/kineticjs/4.7.2/kinetic.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
+	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" >
+</head>
+<body onload="startup()">
+	<div id="main">
+	<div id="toolbar" align="center">
+	<div id="lensgroup" title="Drag and Drop upto two lenses">
+	<div id="labels">Lencsék</div>
+		<div id="lens" ><img id="lense0" name="convex_lense" class="lenses" width=100 height=100 src="Images/100b.png"></div>
+		<div id="lens"><img id="lense1" name="concave_lense" class="lenses" width=100 height=100 src="Images/100a.png"></div>
+		<div id="lens" ><img id="lense2" name="plano_convex_lense" class="lenses" width=100 height=100 src="Images/100plano.png"></div>
+		<div id="lens"><img id="lense3" name="plano_concave_lense" class="lenses" width=100 height=100 src="Images/plano100.png"></div>
+		<div id="lens" ><img id="lense4" name="meniscus_lense" class="lenses" width=100 height=100 src="Images/100po.png"></div>
+		
+	</div></div>
+	<div id="container" align="center"></div>
+		<div id="toolbar" align="center">
+	<div id="objectgroup" title="Click one of these objects" >
+	<div id="labels">Tárgyak</div>
+		<div id="object"><img id="object_arrow"  width=100% height=100% src="Images/arr.png"></div>
+		<div id="object"><img id="object_triangle"  width=100% height=100% src="Images/triangle.png"></div>
+		<div id="object"><img id="object_square"  width=100% height=100% src="Images/box.png"></div>
+		</div>
+	<div id="labels">Súgó</div>
+		<div id="help1"><img id="help"  width=100% height=100% src="Images/help.png"></div>
+	</div>
+	</div>
+	<div class="overlay-bg">
+</div>
+<div class="overlay-content popup1">
+    <p># 5 lencse közül lehet választani. <br /><br />
+# <b>Húzd be </b> a lencsét hogy elhelyezd <br /><br />
+# <b>Kattints</b> egy tárgyra hogy elhelyezd a tengelyen <br /><br />
+# Hozzá tudsz adni összesen <b>két lencsét</b> , miután kettőt hozzáadtál <b>Ki tudod cserélni őlet</b> úgy hogy egy másik lencsét ráhúzol az eddig meglévő lencsére.<br /><br />
+# Tudod<b>Húzni</b> hogy megváltoztasd a sugár diagrammját miután hozzáadtad a <b>Második lencsét</b> <br /><br />
+# <b>Dupla Kattintással</b> el lehet távolítani a kívánt lencsét.<br /><br />
+# Három tárgy ábrázolási típus <b>Nyíl</b>, <b>Háromszög</b> és <b>Téglalap</b>
+</p>
+    <button class="close-btn">Bezárás</button>
+</div>
+
+</body>
+</html>
